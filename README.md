@@ -8,6 +8,6 @@ usage: php edit-settings.php infile edits outfile
 
 Multiple edits should be delimited by a semicolon. There should be no whitespace around the assignment. (eg blah=5 not blah = 5). String variables should be surrounded by single quotes. Integers should not be quoted.
 
-## example: 
+## example
 `php edit-settings.php env.php "backend.frontName='admin_blah';cache_types.config=1" env.php`
 
