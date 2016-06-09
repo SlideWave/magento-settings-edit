@@ -38,6 +38,8 @@ if (strpos($argv[2], ";") !== FALSE) {
 }
 
 foreach ($changes as $change) {
+    if (empty($change)) continue;
+    
     //Change will be in the form a.b.c.d='' or a.b.c.d=X where X is an integer
     $pathAndValue = explode('=', $change);
     $value;
